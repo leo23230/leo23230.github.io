@@ -24,6 +24,8 @@ const animate = function () {
     if(cube.position.y <= -2) dirSwitch = false;
     if(dirSwitch) cube.position.y -= 0.01;
     else cube.position.y += 0.01;
+
+    cube.scale = mouse.x/screen.width;
     // if(cube.scale.z >= 0.5) cube.scale.z -= 0.05;
     // else cube.scale.z += 0.05;
     // if(cube.scale.y >= 0.5) cube.scale.y -= 0.05;
