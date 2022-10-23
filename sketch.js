@@ -58,15 +58,15 @@ function mouseClicked() {
 }
 
 function beginningText(){
-  textSize(32);
+  textSize(32*2);
   textAlign(CENTER, CENTER);
   fill(255);
   text('Welcome to Imagine', windowWidth/2, windowHeight/2);
-  textSize(16);
-  text('Rules:', windowWidth/2, windowHeight/2 + 32);
-  text('1) Pick a card', windowWidth/2, windowHeight/2 + 52);
-  text('2) Click or tap the screen. This will let others know you want to collaborate.', windowWidth/2, windowHeight/2 + 72);
-  text('3) Click again to start timer, you will have 15 minutes to come up with an idea.', windowWidth/2, windowHeight/2 + 92);
-  text('Good Luck!', windowWidth/2, windowHeight/2 + 112);
+  textSize(16*2);
+  text('Rules:', windowWidth/2, windowHeight/2 + 32*2);
+  text('1) Pick a card', windowWidth/2, windowHeight/2 + 52*2);
+  text('2) Click or tap the screen. This will let others know you want to collaborate.', windowWidth/2, windowHeight/2 + 72*2);
+  text('3) Click again to start timer, you will have 15 minutes to come up with an idea.', windowWidth/2, windowHeight/2 + 92*2);
+  text('Good Luck!', windowWidth/2, windowHeight/2 + 112*2);
   
 }
