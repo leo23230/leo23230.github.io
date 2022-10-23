@@ -1,5 +1,5 @@
 let c, g, y, r, gr;
-let timerSet = 3;
+let timerSet = 5;
 let timer = timerSet;
 
 function setup() {
@@ -18,21 +18,20 @@ function draw() {
   if(c == gr) beginningText();
   
   if(c == y){
-    //timer
-    if (frameCount % 70 == 0 && timer > 0) { // if the frameCount is divisible by 70, then a second has passed. it will stop at 0
-      timer --;
-    }
+    //time
+    print(round(millis()/1000) % 1)
+      timer = timerSet - millis()/1000
     
     //if timer is < 60 secs, count down
     if(timer <= 60){
       textSize(64);
       textAlign(CENTER, CENTER);
-      text(timer, width/2, height/2);
+      text(round(timer), width/2, height/2);
     }
   }
   
   //time is up
-  if (timer == 0) {
+  if (round(timer) == 0) {
     c = r;
     textSize(64);
     textAlign(CENTER, CENTER);
